@@ -342,6 +342,8 @@
 
 {% endnote %}
 
+https://webmaster.yandex.ru/site/dashboard/
+
 
 ## Как удалить созданные ресурсы {#clear-out}
 
