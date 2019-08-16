@@ -343,6 +343,7 @@
 {% endnote %}
 
 https://webmaster.yandex.ru/site/dashboard/
+https://yandex.ru/support/webmaster/service/check-url.html
 
 
 ## Как удалить созданные ресурсы {#clear-out}
