@@ -125,41 +125,41 @@
 1. Получите права администратора
 
    ```bash
-   ubuntu@bitrix:~$ sudo -i
-   root@bitrix:~#
+   ubuntu@bitrixwebsite:~$ sudo -i
+   root@bitrixwebsite:~#
    ```
 
 1. Установите необходимое ПО
 
    ```bash
-   root@bitrix:~# apt-get update
-   root@bitrix:~# apt-get install -y apache2 libapache2-mod-php php-gd php-mbstring php-mysql
+   root@bitrixwebsite:~# apt-get update
+   root@bitrixwebsite:~# apt-get install -y apache2 libapache2-mod-php php-gd php-mbstring php-mysql
    ```
 
 1. Перейдите в рабочий каталог проекта
 
    ```bash
-   root@bitrix:~# cd /var/www/html/
+   root@bitrixwebsite:~# cd /var/www/html/
    ```
 
 1. Скачайте дистрибутив “1С-Битрикс: Управление сайтом”
 
    ```bash
-   root@bitrix:/var/www/html# wget https://www.1c-bitrix.ru/download/business_encode.tar.gz
+   root@bitrixwebsite:/var/www/html# wget https://www.1c-bitrix.ru/download/business_encode.tar.gz
    ``` 
 
 1. Распакуйте полученный архив и после этого удалите ненужные файлы
 
    ```bash
-   root@bitrix:/var/www/html# tar -zxf business_encode.tar.gz
-   root@bitrix:/var/www/html# rm -f index.html business_encode.tar.gz
+   root@bitrixwebsite:/var/www/html# tar -zxf business_encode.tar.gz
+   root@bitrixwebsitewww/html# rm -f index.html business_encode.tar.gz
    ```
 
 1. Назначьте пользователя `www-data` владельцем рабочего каталога проекта
 
    ```bash
-   root@bitrix:/var/www/html# chown -R www-data:www-data /var/www/html
-   root@bitrix:/var/www/html# ls -l
+   root@bitrixwebsite:/var/www/html# chown -R www-data:www-data /var/www/html
+   root@bitrixwebsite:/var/www/html# ls -l
    total 76
    drwxrwxr-x 6 www-data www-data  4096 May 15 13:50 bitrix
    -rwxrwxr-x 1 www-data www-data  1378 May 15 13:50 index.php
@@ -175,7 +175,7 @@
 1. Настройте параметры PHP
    В соответствии с требованиями информационной системы необходимо отредактировать следующие переменные в файле конфигурации `/etc/php/7.2/apache2/php.ini`
    
-   Для редактирования файла, можно воспользоваться встроенным редактором `nano` или установите себе предпочитаемый редактор. 
+   Для редактирования файла, воспользуйтесь встроенным редактором `nano` или установите себе предпочитаемый редактор. 
    
 ```bash
 root@bitrixwebsite:/var/www/html# sudo nano /etc/php/7.2/apache2/php.ini
@@ -201,19 +201,20 @@ root@bitrixwebsite:/var/www/html# sudo nano /etc/php/7.2/apache2/php.ini
      Require all granted
    </Directory>
    ```
+ Выполните следующую команду:
  
  ```bash
 root@bitrixwebsite:/var/www/html# sudo nano /etc/apache2/sites-enabled/000-default.conf
 ```  
+Добавьте после строки `DocumentRoot /var/www/html` блок указанный выше.
    
-
 1. Перезапустите Web-сервер для того, чтобы все измененные настройки применились
 
    ```bash
-   root@bitrix:/var/www/html# service apache2 restart
+   root@bitrixwebsite:/var/www/html# service apache2 restart
    ```
 
-После выполнения всех перечисленных выше команд серверная часть будет сконфигурирована для корректной работы 1С-Битрикс. Следующим шагом по созданию интернет-магазина будет непосредственно настройка самой системы 1С-Битрикс.
+После выполнения всех перечисленных выше команд серверная часть будет сконфигурирована для корректной работы 1С-Битрикс. Следующим шагом по созданию веб-сайта будет непосредственно настройка самой системы 1С-Битрикс.
 
 
 ## Настройте 1С-Битрикс {#configure-bitrix}
