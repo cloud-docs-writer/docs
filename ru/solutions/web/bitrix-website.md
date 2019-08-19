@@ -209,7 +209,7 @@ root@bitrixwebsite:/var/www/html# sudo nano /etc/php/7.2/apache2/php.ini
  ```bash
 root@bitrixwebsite:/var/www/html# sudo nano /etc/apache2/sites-enabled/000-default.conf
 ```  
-Добавьте после строки `DocumentRoot /var/www/html` блок указанный выше.
+Добавьте после строки `DocumentRoot /var/www/html` блок указанный выше
    
 1. Перезапустите Web-сервер для того, чтобы все измененные настройки применились
 
