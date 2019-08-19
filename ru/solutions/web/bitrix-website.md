@@ -177,7 +177,7 @@
    В соответствии с требованиями информационной системы необходимо отредактировать следующие переменные в файле конфигурации `/etc/php/7.2/apache2/php.ini`
    
    Для редактирования файла, воспользуйтесь встроенным редактором `nano` или установите себе предпочитаемый редактор.
-   Откройте файл php.ini в нужной категории с помощью следующей команды
+   Откройте файл php.ini в нужной категории с помощью следующей команды:
    
    ```bash
    root@bitrixwebsite:/var/www/html# sudo nano /etc/php/7.2/apache2/php.ini
@@ -204,11 +204,11 @@
      Require all granted
    </Directory>
    ```
- Выполните следующую команду:
+   Выполните следующую команду:
  
- ```bash
-root@bitrixwebsite:/var/www/html# sudo nano /etc/apache2/sites-enabled/000-default.conf
-```  
+   ```bash
+   root@bitrixwebsite:/var/www/html# sudo nano /etc/apache2/sites-enabled/000-default.conf
+   ```  
    Добавьте после строки `DocumentRoot /var/www/html` блок указанный выше
    
 1. Перезапустите Web-сервер для того, чтобы все измененные настройки применились
