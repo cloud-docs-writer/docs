@@ -190,10 +190,11 @@ root@bitrixwebsite:/var/www/html# sudo nano /etc/php/7.2/apache2/php.ini
    |display_errors = Off        | display_errors = On          |
    |memory_limit = 128M         | memory_limit = 256M          |
    |;date.timezone =            | date.timezone = Europe/Moscow|
-   |;opcache.revalidate_freq=2  | opcache.revalidate_freq =0  |
+   |;opcache.revalidate_freq=2  | opcache.revalidate_freq =0   |
    |;mbstring.func_overload = 0 | mbstring.func_overload = 2   |
 
 1. Настройте сервер Apache
+
    В соответствиии с требованиями информационной системы необходимо отредактировать файл конфигурации `/etc/apache2/sites-enabled/000-default.conf`, добавив в него после строки `DocumentRoot /var/www/html` следующий блок:
 
    ```
