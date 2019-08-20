@@ -106,7 +106,7 @@
 1. Остальные поля оставьте без изменений.
 1. Нажмите на кнопку **Создать кластер**.
 
-Создание кластера БД может занять несколько минут. Проверить доступность созданного кластера вы можете в **Дашборд каталога**, консоли управления Яндекс Облаком, выбрать **Managed Service for MySQL**. На вкладке **Кластеры**, статус кластера должен быть **Running**, состояние **Alive**. 
+Создание кластера БД может занять несколько минут. Проверить доступность созданного кластера вы можете в **Дашборд каталога**, консоли управления Яндекс Облаком, выбрав **Managed Service for MySQL**. На вкладке **Кластеры**, статус кластера должен быть **Running**, состояние **Alive**. 
 
 
 ## Настройте сервер для работы с 1C-Битрикс {#configure-server}
@@ -127,6 +127,7 @@
       1. выберите блок **Compute Cloud**;
       1. Кликните по имени вашей виртуальной машины (в данном примере имя виртуальной машины - bitrix);
       1. Откроется окно с общей информацией по вашей виртуальной машине. Публичный IP-адрес вы можете найти в блоке **Сеть** в строке **Публичный IPv4**;
+      ![Шаг 1](../_assets/bitrix-website/vm-public-ip.png) 
 
    {% endnote %}
 
@@ -153,14 +154,14 @@
 1. Скачайте дистрибутив “1С-Битрикс: Управление сайтом”
 
    ```bash
-   root@bitrixwebsite:/var/www/html# wget https://www.1c-bitrix.ru/download/business_encode.tar.gz
+   root@bitrixwebsite:/var/www/html# wget https://www.1c-bitrix.ru/download/standard_encode.tar.gz
    ``` 
 
 1. Распакуйте полученный архив и после этого удалите ненужные файлы
 
    ```bash
-   root@bitrixwebsite:/var/www/html# tar -zxf business_encode.tar.gz
-   root@bitrixwebsitewww/html# rm -f index.html business_encode.tar.gz
+   root@bitrixwebsite:/var/www/html# tar -zxf standard_encode.tar.gz
+   root@bitrixwebsite:/var/www/html# rm -f index.html standard_encode.tar.gz
    ```
 
 1. Назначьте пользователя `www-data` владельцем рабочего каталога проекта
