@@ -273,12 +273,15 @@
       
    ![Шаг 7](../_assets/bitrix-website/mysql-host.png)
       
-   1. В полях [**Имя пользователя** и **Пароль**](../_assets/bitrix-website/create-mysql-cluster2.png). укажите соответствующие данные, которые вы указывали при создании базы данных.
+   1. В полях **Имя пользователя** и **Пароль**. укажите соответствующие данные, которые вы указывали при создании базы данных.
    1. В поле **Имя базы данных** укажите имя созданной базы данных. По умолчанию в инструкции используется значение `db1`.
    1. Все остальные поля оставьте по умолчанию.
    1. После этого нажмите кнопку **Далее**.
-
-   ![Шаг 8](../_assets/bitrix-website/bitrix-website7.png)
+   
+   ![Шаг 8](../_assets/bitrix-website/create-mysql-cluster1.png)
+   ![Шаг 9](../_assets/bitrix-website/create-mysql-cluster2.png)
+   ![Шаг 10](../_assets/bitrix-website/create-mysql-cluster3.png)
+   ![Шаг 11](../_assets/bitrix-website/bitrix-website7.png)
 
 1. Установка продукта
 
