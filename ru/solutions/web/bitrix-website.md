@@ -213,7 +213,7 @@
      AllowOverride All
      Require all granted
    ```
-   Выполните следующую команду:
+   Выполните следующую команду
  
    ```bash
    root@bitrixwebsite:/var/www/html# sudo nano /etc/apache2/sites-enabled/000-default.conf
