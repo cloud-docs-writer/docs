@@ -199,7 +199,7 @@
    |display_errors = Off        | display_errors = On          |
    |memory_limit = 128M         | memory_limit = 256M          |
    |;date.timezone =            | date.timezone = Europe/Moscow|
-   |;opcache.revalidate_freq=2  | opcache.revalidate_freq =0   |
+   |;opcache.revalidate_freq =2 | opcache.revalidate_freq =0   |
    |;mbstring.func_overload = 0 | mbstring.func_overload = 2   |
 
 1. Настройте сервер Apache
@@ -294,7 +294,7 @@
 
 1. Выберите решение для установки
 
-   На выбор предлагаются шаблоны для интерфейса системы. В данном примере выбирите **Интернет портал** и нажмите кнопку **Далее**.
+   На выбор предлагаются шаблоны для интерфейса системы. В данном примере выбирите **Информационный портал** и нажмите кнопку **Далее**.
 
    ![Шаг 11](../_assets/bitrix-website/bitrix-website10.png)
 
@@ -308,7 +308,7 @@
 
    В данном меню предлагается цветовое оформление выбранного ранее шаблона. Выберите оформление по вкусу и нажмите кнопку **Далее**.
 
-   ![Шаг 10](../_assets/bitrix-shop/bitrix-shop10.png)
+   ![Шаг 13](../_assets/bitrix-website/bitrix-website12.png)
 
 1. Информация о сайте
 
